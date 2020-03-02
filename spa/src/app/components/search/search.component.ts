@@ -22,6 +22,7 @@ export class SearchComponent implements OnInit {
       this.activatedRoute.params.subscribe(params =>{
       this.nombre = params['nombre']
       this.heroes = this._heroeService.buscarHeroes(params['nombre']) 
+      console.log(this.heroes)
     })
   }
 
